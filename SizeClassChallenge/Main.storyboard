@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="q4p-mu-YGb">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FqI-b2-AI4">
+            <objects>
+                <viewController id="q4p-mu-YGb" customClass="ViewController" customModule="SizeClassChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vMJ-Ky-rlh"/>
+                        <viewControllerLayoutGuide type="bottom" id="VVf-jn-meE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kuU-kX-FYB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá estranho" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibY-Q1-OTL">
+                                <rect key="frame" x="158" y="357.66666666666669" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você não disse sua idade" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-yh-eeo">
+                                <rect key="frame" x="110" y="387.66666666666669" width="194" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nx-3q-5a3" customClass="CustomButton" customModule="SizeClassChallenge" customModuleProvider="target">
+                                <rect key="frame" x="142" y="433" width="130" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IQ6-PA-BO2"/>
+                                    <constraint firstAttribute="width" constant="130" id="qS2-Zr-qxG"/>
+                                </constraints>
+                                <state key="normal" title="Alterar nome"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="FGj-Qr-gNa" kind="custom" customClass="customSegue" customModule="SizeClassChallenge" customModuleProvider="target" id="as2-85-y02"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gle-X3-XYf" customClass="CustomButton" customModule="SizeClassChallenge" customModuleProvider="target">
+                                <rect key="frame" x="142" y="473" width="130" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="Muz-Mj-Let"/>
+                                    <constraint firstAttribute="height" constant="30" id="qXP-h0-KAT"/>
+                                </constraints>
+                                <state key="normal" title="Alterar Idade"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ov5-4b-VFn" kind="custom" customClass="customSegue" customModule="SizeClassChallenge" customModuleProvider="target" id="LKH-8n-AGB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gVG-yh-eeo" firstAttribute="centerX" secondItem="kuU-kX-FYB" secondAttribute="centerX" id="09W-XI-tUa"/>
+                            <constraint firstItem="Gle-X3-XYf" firstAttribute="centerY" secondItem="kuU-kX-FYB" secondAttribute="centerY" constant="120" id="0gr-hD-dPb"/>
+                            <constraint firstItem="ibY-Q1-OTL" firstAttribute="centerY" secondItem="kuU-kX-FYB" secondAttribute="centerY" id="30s-1P-kNS"/>
+                            <constraint firstItem="Gle-X3-XYf" firstAttribute="centerX" secondItem="kuU-kX-FYB" secondAttribute="centerX" id="67V-dp-8Fq"/>
+                            <constraint firstItem="0nx-3q-5a3" firstAttribute="centerY" secondItem="kuU-kX-FYB" secondAttribute="centerY" constant="80" id="D64-cy-kTH"/>
+                            <constraint firstItem="gVG-yh-eeo" firstAttribute="centerY" secondItem="kuU-kX-FYB" secondAttribute="centerY" constant="30" id="PY3-d6-5RP"/>
+                            <constraint firstItem="0nx-3q-5a3" firstAttribute="centerX" secondItem="kuU-kX-FYB" secondAttribute="centerX" id="YoE-PU-Jef"/>
+                            <constraint firstItem="ibY-Q1-OTL" firstAttribute="centerX" secondItem="kuU-kX-FYB" secondAttribute="centerX" id="vTZ-wy-8kk"/>
+                        </constraints>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="gVG-yh-eeo" id="3fJ-vj-x3g"/>
+                        <outlet property="nameLabel" destination="ibY-Q1-OTL" id="dGC-go-jUl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXN-73-NNc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653.60000000000002" y="-33.733133433283363"/>
+        </scene>
+        <!--age-->
+        <scene sceneID="fwo-RX-tmh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="age" id="ov5-4b-VFn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETQ-8B-YGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-1"/>
+        </scene>
+        <!--name-->
+        <scene sceneID="nVf-0F-cAu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="name" id="FGj-Qr-gNa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mbm-RF-hkA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1223" y="-57"/>
+        </scene>
+    </scenes>
+</document>
